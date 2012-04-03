@@ -1,0 +1,72 @@
+Le programme sera capable de créer un fichier joueur de ce type :
+Il créera aussi un fichier plateau central du même type.
+Il sera capable d'accéder à ce fichier en écriture et en lecture.
+
+Il me semble que cette manière permet d'éviter la création de nombreuses variables et simplifie de ce fait le programme mais peut être me trompe-je (sûrement d'ailleurs).
+
+LE FICHIER JOUEUR : (un simple fichier txt comme celui-ci)
+
+1-nomDuJoueur : 
+2-tailleDeLaFamille :
+3-nombreDeBle :
+4-nombreDeBois :
+5-nombreDePierre :
+6-nombreDeLegume :
+7-nombreDeMoutons :
+8-nombreDePorc :
+9-nombreDeBoeuf :
+10-nombreDePn :
+11-
+12-nombreDeChamps :
+13-nombreDePaturage :
+14-nombreDePaturageEtable :
+15-nombreDeEtable :
+16-nombreDeLaboure :
+17-nombreDeMaisonBois :
+18-nombreDeMaisonArgile :
+19-nombreDeMaisonPierre :
+20-
+21-nombreDeAmenagementMineur : 	|	Je ne sais pas s'il est aussi possible de stocker des "trucs" (dsl)
+22-nombreDeAmenagementMajeur :	|	faisant appel à des fonctions (cartes pouvoir dans le vrai jeu).
+23-nombreDeSavoirFaire : 	|	???
+24-
+25-
+
+Tous les fichiers joueurs serait identiques dans le squelette.
+J'ai mis des numéros de ligne pour facilité la lecture et l'écriture de ces fichier par le programme (je ne sais pas si c'est necessaire car je ne sais pas (encore !) comment commander au programme de lire telle ligne dans tel fichier et encore moins commander au programme d'écrire ou de modifé tel ou tel champs dans tel ou tel fichier (c'est pourquoi j'ai écris ces lignes en mode variable...) ???
+
+
+
+
+LE FICHIER PLATEAU CENTRAL
+
+Il sera créer en début de programme comme les fichier joueurs.
+Il sera modifié lors des actions des joueurs.
+Il mettra à jour certaine informations de l'interface graphique du plateau central.
+
+
+1-CASE 1 "Ramasser du blé" : nombreDeBle : 4
+2-CASE 2 "Trouve un mouton" : nombreDeMoutons : 0
+3-CASE 3 "Sieste"
+4-CASE 4 "Couper du bois -> +2 bois par tour" : nombreDeBois : 2
+5-CASE 5 "Cuire son mouton" 
+6-...
+
+Le fichier plateau central ne permettra que d'incrémenté les valeurs des cases
+Par exemple :
+
+Lors de la fonction d'incrémentation du plateau central (phase 2 du tour de jeu (cf Structure du programme))
+
+1-La fonction "lit" le nombreDeBle, il "voit" 4 donc la case est pleine, il sait que cette case (ligne) à un max de 4 il ne fait rien.
+
+2-La fonction "lit" le nombreDeMoutons : 0, il sait que cette case (ligne) à un max de 1, il "remplit la case de 1 mouton.
+
+3-La fonction "lit" le sieste, elle ne fait rien.
+
+4-La fonction "lit" nombreDe Bois : 2, elle sait que cette case (ligne) n'à pas de max : elle rajoute 2 au nombreDeBois présent...
+
+...
+
+Dans l'interface graphique du plateau, lorsque le joueur chosit une action, il lance une fonction cette fonction viendra
+soit modifier le fichier plateau central (genre "vider" la ligne 4)
+soit fera une action indépandante de ce fichier (exemple ligne 5)

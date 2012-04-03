@@ -1,0 +1,149 @@
+Projet AGRICOLONS
+
+Les différentes tâches à faire
+
+
+I-Les plateaux de jeux.
+	A-Plateaux fixes.
+		1-Plateaux ressources (différentes cases).
+		2-Plateaux cartes (Aménagements majeurs).
+			a-foyer 1
+			b-foyer 2
+			c-fourneau 1
+			d-fourneau 2
+			e-
+			f-four en brique
+			g-four en pierre
+			h-menuiserie
+			i-poterie
+			j-vannerie
+	B-Plateaux aléatoires. 
+		1-Différentes cases.
+                2-Mélanges des cases.
+		3-placement des cases.
+		4-Dévoilement des cartes (au début d'un tour)."dévoile case"
+	C-Plateaux individuels.
+		1-Différentes cases possible.
+			a-cour de ferme.
+			b-Champs labourés.
+			c-champs ensemmés.
+			d-enclos.
+			e-étables.
+			f-enclos + étables
+			g-cabanne de bois.
+			h-maisons d'argile.
+			i-maisons de pierre.
+			j-réserve de bois.
+			k-reserve d'argile.
+			l-reserve de pierres.
+			m-reserve de blé.
+			n-reserve de légumes.
+			o-reserve de PN.
+			p-aménagements mineurs.
+			q-aménagement majeurs.
+			r-savoirs faire.
+		2-Choix d'un type de cases.
+		3-Reserves + incrémentations (reserves + cases)
+		3-Ajouts, suppression des cartes ménagements, savoir faire.
+	D-Mains de cartes.
+		1-différentes cartes.
+		2-Tirages aléatoires des cartes.
+		3-Ajouts, suppressions de cartes (lors de cartes jouées).
+	E-Fiches des joueurs.
+		1-nom du joueur.
+		2-Plateaux individuel.
+			a-cour de ferme.
+			b-Champs labourés.
+			c-champs ensemmés.
+			d-enclos.
+			e-étables.
+			f-enclos + étables
+			g-cabanne de bois.
+			h-maisons d'argile.
+			i-maisons de pierre.
+			j-réserve de bois.
+			k-reserve d'argile.
+			l-reserve de pierres.
+			m-reserve de blé.
+			n-reserve de légumes.
+			o-reserve de PN.
+			p-aménagements mineurs.
+			q-aménagement majeurs.
+			r-savoirs faire.
+		3-Cartes en mains
+			a-cartes aménagements mineurs.
+			b-cartes aménagements majeurs.
+			
+
+II-ressources.
+	A-Différentes ressources.
+		1-bois.
+		2-argile.
+		3-Pierre.
+		4-moutons.
+		5-sangliers.
+		6-Boeufs.
+		7-PN.
+	B-Incrémentation des cases (au début d'un tour).
+	C-Gestion de la reserve (ajouts, suppression de ressources).
+	D-Gestion des cases (suppression des ressources des cases plateaux).
+	
+III-Scores.
+	A-Calculs des ...
+	B-Calculs des ...
+	C-Calculs des ...
+	D-
+	E-Classements + Meilleurs scores.
+
+IV-Jeux.
+	A-déroulement du jeu.
+		1-déroulement d'un tour
+			0-Appel de la fonction "dévoille case".
+			a-appel fonction incrémentation des cases plateaux.
+			b-determination du nombre d'action des joueurs.
+			b-Premières actions des joueurs.
+
+V-Représentation.
+	A-Plateaux.
+	B-Cartes.
+	C-ressources.
+	D-Fenêtres de choix.
+	E-....
+
+
+
+
+
+
+1ERE ETAPE : 
+
+Choix du nombre de joueurs et du nombre d'élément dans la famille.
+Création des fichiers joueurs
+Création des plateaux centraux, fixes et aléatoires pas de dessin, juste des cases + noms (création des cases à incrémentés uniquement)
+Création des plateaux individuels (juste des données brutes afin de voir si les MàJ marchent.
+Tours de jeux s'enchainant (en boucle) + MàJ fichiers des joueurs + MàJ des "plateaux des joueurs"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
